@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { FaClock, FaBrain, FaBolt, FaTrophy } from 'react-icons/fa';
+import { FaClock, FaBrain } from 'react-icons/fa';
 
 interface GameMode {
   name: string;

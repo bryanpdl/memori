@@ -35,4 +35,6 @@ const Tile: React.FC<TileProps> = React.memo(({ value, isFlipped, isMatched, isM
   );
 });
 
+Tile.displayName = 'Tile';
+
 export default Tile;

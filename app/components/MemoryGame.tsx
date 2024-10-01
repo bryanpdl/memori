@@ -95,18 +95,6 @@ const MemoryGame: React.FC = () => {
     }, 1000); // Adjust this delay as needed
   };
 
-  const resetGame = useCallback(() => {
-    setLevel(1);
-    setIsGameStarted(false);
-    setIsGameOver(false);
-    setTimeLeft(0);
-    setTiles([]);
-    setFlippedTiles([]);
-    setMatchedPairs(0);
-    setScore(0);
-    setTotalScore(0);
-  }, []);
-
   useEffect(() => {
     if (matchedPairs === tiles.length / 2 && tiles.length > 0) {
       setIsGameStarted(false);
